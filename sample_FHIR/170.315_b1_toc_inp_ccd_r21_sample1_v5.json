@@ -1,0 +1,4318 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Composition",
+        "id": "1",
+        "identifier": {
+          "use": "official",
+          "system": "urn:oid:2.16.840.1.113883.19.5.99999.1",
+          "value": "TT106"
+        },
+        "status": "preliminary",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34133-9",
+              "display": "Summarization of Episode Note"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+                "code": "LP173421-7",
+                "display": "Note"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "date": "2015-06-22",
+        "author": [
+          {
+            "reference": "Practitioner/4",
+            "display": "Dr Henry Seven"
+          }
+        ],
+        "title": "170.315_b1_toc_inp_ccd_r21_sample1 test data",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": "legal",
+            "time": "2015-06-22",
+            "party": {
+              "reference": "Practitioner/6",
+              "display": "Dr Henry Seven"
+            }
+          },
+          {
+            "mode": "professional",
+            "time": "2015-06-22",
+            "party": {
+              "reference": "Practitioner/6",
+              "display": "Dr Henry Seven"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/10",
+          "display": "Community Health and Hospitals"
+        },
+        "event": [
+          {
+            "period": {
+              "start": "2015-06-22",
+              "end": "2015-06-24"
+            },
+            "detail": [
+              {
+                "reference": "Practitioner/8",
+                "display": "Dr Henry Seven"
+              },
+              {
+                "reference": "Practitioner/11",
+                "display": "Mary McDonald"
+              }
+            ]
+          }
+        ],
+        "section": [
+          {
+            "title": "ALLERGIES AND ADVERSE REACTIONS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "AllergyIntolerance/14",
+                "display": "Penicillin G"
+              },
+              {
+                "reference": "AllergyIntolerance/15",
+                "display": "Ampicillin"
+              }
+            ]
+          },
+          {
+            "title": "RESULTS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "RESULTS"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "DiagnosticReport/16",
+                "display": "Urinalysis (procedure)"
+              },
+              {
+                "reference": "DiagnosticReport/24",
+                "display": "CBC"
+              }
+            ]
+          },
+          {
+            "title": "ENCOUNTERS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "46240-8",
+                  "display": "History of encounters"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Encounter/29",
+                "display": "Anemia in Chronic Kidney Disease"
+              }
+            ]
+          },
+          {
+            "title": "PROBLEMS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "PROBLEM LIST"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Condition/33",
+                "display": "Chronic rejection of renal transplant"
+              },
+              {
+                "reference": "Condition/34",
+                "display": "INTERSTITIAL PNEUMONIA"
+              },
+              {
+                "reference": "Condition/35",
+                "display": "IRON DEFICIENCY ANEMIA"
+              },
+              {
+                "reference": "Condition/36",
+                "display": "Essential hypertension"
+              },
+              {
+                "reference": "Condition/37",
+                "display": "Severe Hypothyroidism"
+              },
+              {
+                "reference": "Condition/38",
+                "display": "Overweight"
+              }
+            ]
+          },
+          {
+            "title": "PROCEDURES",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47519-4",
+                  "display": "HISTORY OF PROCEDURES"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Procedure/39",
+                "display": "Chest X-Ray, PA and Lateral Views"
+              },
+              {
+                "reference": "Procedure/43",
+                "display": "Bronchoscopy"
+              },
+              {
+                "reference": "Procedure/44",
+                "display": "Introduction of cardiac pacemaker system via vein"
+              }
+            ]
+          },
+          {
+            "title": "MEDICATIONS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "HISTORY OF MEDICATION USE"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "MedicationStatement/45",
+                "display": "Prednisolone 50mg"
+              },
+              {
+                "reference": "MedicationStatement/47",
+                "display": "Vantin 200MG (cefpodoxime 200mg)"
+              },
+              {
+                "reference": "MedicationStatement/49",
+                "display": "Ciprofloxacin 250mg"
+              },
+              {
+                "reference": "MedicationStatement/51",
+                "display": "Torsemide 20mg"
+              },
+              {
+                "reference": "MedicationStatement/53",
+                "display": "Mycophenolic Acid 360 mg"
+              },
+              {
+                "reference": "MedicationStatement/55",
+                "display": "Ceftriaxone 100MG/ML"
+              },
+              {
+                "reference": "MedicationStatement/57",
+                "display": "Clindamycin 300mg"
+              },
+              {
+                "reference": "MedicationStatement/59",
+                "display": "Tylenol 500mg"
+              },
+              {
+                "reference": "MedicationStatement/61",
+                "display": "Darbepoetin Alfa 0.5 MG/ML"
+              },
+              {
+                "reference": "MedicationStatement/63",
+                "display": "Levothyroxine Sodium 1 MG"
+              },
+              {
+                "reference": "MedicationStatement/65",
+                "display": "FenoFibric Acid 35 mg"
+              },
+              {
+                "reference": "MedicationStatement/67",
+                "display": "Everolimus 0.5 mg"
+              }
+            ]
+          },
+          {
+            "title": "IMMUNIZATIONS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6",
+                  "display": "History of immunizations"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Immunization/69",
+                "display": "Tetanus and diphtheria toxoids"
+              },
+              {
+                "reference": "Immunization/71",
+                "display": "influenza, intradermal, quadrivalent, preservative free"
+              },
+              {
+                "reference": "Immunization/73",
+                "display": "Influenza virus vaccine"
+              }
+            ]
+          },
+          {
+            "title": "VITAL SIGNS",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "VITAL SIGNS"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Observation/75",
+                "display": "BP Diastolic"
+              },
+              {
+                "reference": "Observation/78",
+                "display": "O2 % BldC Oximetry"
+              },
+              {
+                "reference": "Observation/79",
+                "display": "Patient Body Weight"
+              },
+              {
+                "reference": "Observation/80",
+                "display": "Intravascular Systolic"
+              },
+              {
+                "reference": "Observation/81",
+                "display": "Height"
+              },
+              {
+                "reference": "Observation/82",
+                "display": "Heart Rate"
+              },
+              {
+                "reference": "Observation/83",
+                "display": "Body Temperature"
+              },
+              {
+                "reference": "Observation/84",
+                "display": "Respiratory Rate"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Composition",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.19.5.99999.1|TT106"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.1",
+            "value": "117273338"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "family": "Pitt",
+            "given": [
+              "Lindsey",
+              "Turner"
+            ]
+          },
+          {
+            "use": "usual",
+            "family": "Pitt",
+            "given": [
+              "Lin",
+              "Turner"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-223-1234",
+            "use": "mobile"
+          },
+          {
+            "system": "phone",
+            "value": "+1(555)-224-1544",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1970-06-01",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "1006 Amber Dr"
+            ],
+            "city": "Beaverton",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "M",
+              "display": "Married"
+            }
+          ]
+        },
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/ValueSet/languages",
+                  "code": "en-US"
+                }
+              ]
+            },
+            "preferred": true
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/3",
+          "display": "Community Health and Hospitals"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.1|117273338"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "99999999"
+          }
+        ],
+        "name": "Community Health and Hospitals",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-5000",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1002 Healthcare Dr"
+            ],
+            "city": "Beaverton",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|99999999"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "4",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "111111"
+          }
+        ],
+        "name": [
+          {
+            "family": "Seven",
+            "given": [
+              "Henry"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-1002",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1002 Healthcare Dr"
+            ],
+            "city": "Beaverton",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|111111"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "6",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "999998899"
+          }
+        ],
+        "name": [
+          {
+            "family": "Seven",
+            "given": [
+              "Henry"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-1002",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1002 Healthcare Dr"
+            ],
+            "city": "Beaverton",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|999998899"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "8",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "5555555555"
+          }
+        ],
+        "name": [
+          {
+            "family": "Seven",
+            "given": [
+              "Henry"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-1002",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1002 Healthcare Dr"
+            ],
+            "city": "Beaverton",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|5555555555"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "9",
+        "practitioner": {
+          "reference": "Practitioner/8",
+          "display": "Dr Henry Seven"
+        },
+        "organization": {
+          "reference": "Organization/10",
+          "display": "Community Health and Hospitals"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.101",
+                "code": "207QA0505X",
+                "display": "Adult Medicine"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole",
+        "ifNoneExist": "practitioner.identifier=null|null&organization.identifier=null|null"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "10",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "99998899"
+          }
+        ],
+        "name": "Community Health and Hospitals",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-5000",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1002 Healthcare Dr"
+            ],
+            "city": "Beaverton",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|99998899"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "11",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.3.6.1.4.1.22812.4.99930.4",
+            "value": "91138"
+          }
+        ],
+        "name": [
+          {
+            "family": "McDonald",
+            "given": [
+              "Mary"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-1002",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1002 Healthcare Dr"
+            ],
+            "city": "Beaverton",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:1.3.6.1.4.1.22812.4.99930.4|91138"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "14",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "type": "intolerance",
+        "category": [
+          "medication"
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "7980",
+              "display": "Penicillin G"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "onsetDateTime": "1980-05-01",
+        "recordedDate": "1980-05-01",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "247472004",
+                    "display": "Hives"
+                  }
+                ]
+              }
+            ],
+            "severity": "moderate"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "AllergyIntolerance",
+        "ifNoneExist": "identifier=36e3e930-7b14-11db-9fe1-0800200c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "15",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "b03805bd-2eb6-4ab8-a9ff-473c6653971a"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "type": "intolerance",
+        "category": [
+          "medication"
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "733",
+              "display": "Ampicillin"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "onsetDateTime": "1980-05-01",
+        "recordedDate": "1980-05-01",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "247472004",
+                    "display": "Hives"
+                  }
+                ]
+              }
+            ],
+            "severity": "moderate"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "AllergyIntolerance",
+        "ifNoneExist": "identifier=b03805bd-2eb6-4ab8-a9ff-473c6653971a"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "16",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "7d5a02b0-67a4-11db-bd13-0800222c9a66"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "24357-6",
+              "display": "Urinalysis (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22",
+          "end": "2015-06-22"
+        },
+        "result": [
+          {
+            "reference": "Observation/17",
+            "display": "Protein[Mass/Volume] in urine by test strip"
+          },
+          {
+            "reference": "Observation/18",
+            "display": "Color of Urine"
+          },
+          {
+            "reference": "Observation/19",
+            "display": "pH of Urine by Test strip"
+          },
+          {
+            "reference": "Observation/20",
+            "display": "Appearance of Urine"
+          },
+          {
+            "reference": "Observation/21",
+            "display": "Ketones [Mass/Volume] in urine by test strip"
+          },
+          {
+            "reference": "Observation/22",
+            "display": "Specific gravity of Urine by Test strip"
+          },
+          {
+            "reference": "Observation/23",
+            "display": "Glucose [Mass/volume] in urine by test strip"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport",
+        "ifNoneExist": "identifier=7d5a02b0-67a4-11db-bd13-0800222c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "17",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44Xd-6f39-4f5c-b457-897c3895cd9z"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "5804-0",
+              "display": "Protein[Mass/Volume] in urine by test strip"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueQuantity": {
+          "value": 100,
+          "unit": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44Xd-6f39-4f5c-b457-897c3895cd9z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "18",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f39-4f5c-b267-897c3834b563"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "5778-6",
+              "display": "Color of Urine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueString": "YELLOW",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f39-4f5c-b267-897c3834b563"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "19",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f39-4f5c-b267-297c3865cd7x"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "5803-2",
+              "display": "pH of Urine by Test strip"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueQuantity": {
+          "value": 5.0,
+          "unit": "[pH]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 5.0,
+              "unit": "[pH]",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            },
+            "high": {
+              "value": 8.0,
+              "unit": "[pH]",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f39-4f5c-b267-297c3865cd7x"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "20",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f39-4f5c-b267-897c3844b574"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "5767-9",
+              "display": "Appearance of Urine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueString": "CLEAR",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f39-4f5c-b267-897c3844b574"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "21",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f39-4f5c-b267-123c3884b571"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "5797-6",
+              "display": "Ketones [Mass/Volume] in urine by test strip"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f39-4f5c-b267-123c3884b571"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "22",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f39-4f5c-b267-896c3855c678"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "5811-5",
+              "display": "Specific gravity of Urine by Test strip"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueQuantity": {
+          "value": 1.015,
+          "unit": "1"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 1.005,
+              "unit": "1",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            },
+            "high": {
+              "value": 1.030,
+              "unit": "1",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f39-4f5c-b267-896c3855c678"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "23",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44xd-6f39-4f5c-b267-897c3875cd7x"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "5792-7",
+              "display": "Glucose [Mass/volume] in urine by test strip"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueQuantity": {
+          "value": 50,
+          "unit": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44xd-6f39-4f5c-b267-897c3875cd7x"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "24",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "7d5a02b0-67a4-11db-bd13-0800221c9a23"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "58410-2",
+              "display": "CBC"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22",
+          "end": "2015-06-22"
+        },
+        "result": [
+          {
+            "reference": "Observation/25",
+            "display": "HGB"
+          },
+          {
+            "reference": "Observation/26",
+            "display": "WBC"
+          },
+          {
+            "reference": "Observation/27",
+            "display": "PLT"
+          },
+          {
+            "reference": "Observation/28",
+            "display": "Everolimus Blood"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport",
+        "ifNoneExist": "identifier=7d5a02b0-67a4-11db-bd13-0800221c9a23"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "25",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f39-4f5c-b267-897c3825b563"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "30313-1",
+              "display": "HGB"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueQuantity": {
+          "value": 10.2,
+          "unit": "g/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f39-4f5c-b267-897c3825b563"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "26",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f39-4f5c-b267-897c3824b673"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33765-9",
+              "display": "WBC"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueQuantity": {
+          "value": 12.3,
+          "unit": "10*3/uL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f39-4f5c-b267-897c3824b673"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "27",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f29-4f5c-b267-897c3834b563"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "26515-7",
+              "display": "PLT"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueQuantity": {
+          "value": 123,
+          "unit": "10*3/uL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f29-4f5c-b267-897c3834b563"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "28",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f1aa44dd-6f39-4f5c-b267-897c3845b562"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "50544-6",
+              "display": "Everolimus Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "valueQuantity": {
+          "value": 10.2,
+          "unit": "ng/mL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.0,
+              "unit": "ng/mL",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            },
+            "high": {
+              "value": 8.0,
+              "unit": "ng/mL",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f1aa44dd-6f39-4f5c-b267-897c3845b562"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "29",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+          }
+        ],
+        "status": "finished",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "99234",
+                "display": "Observation or Inpatient Hospital care"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.5.4",
+                "code": "IMP",
+                "display": "Inpatient"
+              }
+            ],
+            "text": "Anemia in Chronic Kidney Disease"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation"
+                  }
+                ]
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/30"
+            }
+          }
+        ],
+        "period": {
+          "start": "2015-06-22"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/32",
+              "display": "Community Health and Hospitals"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter",
+        "ifNoneExist": "identifier=2a620155-9d11-439e-92b3-5d9815ff4de8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "30",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "99999999"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|99999999"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "32",
+        "name": "Community Health and Hospitals",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-1002",
+            "use": "work"
+          }
+        ],
+        "address": {
+          "line": [
+            "1002 Healthcare Dr"
+          ],
+          "city": "Beaverton",
+          "state": "OR",
+          "postalCode": "97266",
+          "country": "US"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Location"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "33",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ab1791b0-5c71-11db-b0de-0813200c9a69"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "236578006",
+              "display": "Chronic rejection of renal transplant"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "onsetDateTime": "2006-12-31"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=ab1791b0-5c71-11db-b0de-0813200c9a69"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "34",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ab1791b0-5c71-11db-b0de-0816200c9a41"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64667001",
+              "display": "INTERSTITIAL PNEUMONIA"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "onsetDateTime": "2015-06-22"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=ab1791b0-5c71-11db-b0de-0816200c9a41"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "35",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ab1791b0-5c71-11db-6666-6666666c6a66"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "87522002",
+              "display": "IRON DEFICIENCY ANEMIA"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "onsetDateTime": "2015-06-22"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=ab1791b0-5c71-11db-6666-6666666c6a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "36",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ab1791b0-5c71-11db-b0de-0811200c9a66"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "59621000",
+              "display": "Essential hypertension"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "onsetDateTime": "2015-10-05"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=ab1791b0-5c71-11db-b0de-0811200c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "37",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ab1791b0-5c71-11db-b0de-0812200c9a68"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "83986005",
+              "display": "Severe Hypothyroidism"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "onsetDateTime": "2006-12-31"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=ab1791b0-5c71-11db-b0de-0812200c9a68"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "38",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ab1791b0-5c71-11db-b0de-0800200c2b11"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "inactive",
+              "display": "Inactive"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "refuted",
+              "display": "Refuted"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "238131007",
+              "display": "Overweight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "onsetDateTime": "2006-12-31",
+        "abatementDateTime": "2007-06-01"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition",
+        "ifNoneExist": "identifier=ab1791b0-5c71-11db-b0de-0800200c2b11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "39",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "d68b7e32-7811-4f5b-9cc2-acd54b0fd85d"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "168731009",
+              "display": "Chest X-Ray, PA and Lateral Views"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "performedPeriod": {
+          "start": "2015-06-22"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "Practitioner/40"
+            },
+            "onBehalfOf": {
+              "reference": "Organization/42"
+            }
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "82094008",
+                "display": "Lower Respiratory Tract Structure"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure",
+        "ifNoneExist": "identifier=d68b7e32-7811-4f5b-9cc2-acd54b0fd85d"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "40",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.19.5.9999.456",
+            "value": "2981823"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-5000",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "1002 Healthcare Dr"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.19.5.9999.456|2981823"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "41",
+        "practitioner": {
+          "reference": "Practitioner/40"
+        },
+        "organization": {
+          "reference": "Organization/42",
+          "display": "Community Health and Hospitals"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole",
+        "ifNoneExist": "practitioner.identifier=null|null&organization.identifier=null|null"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "42",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "2.16.840.1.113883.19.5.9999.1393"
+          }
+        ],
+        "name": "Community Health and Hospitals",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(555)-555-5000",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "1002 Healthcare Dr"
+            ],
+            "city": "Portland",
+            "state": "OR",
+            "postalCode": "97266",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization",
+        "ifNoneExist": "identifier=2.16.840.1.113883.19.5.9999.1393"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "43",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "d68b7e32-7812-4f5b-9cc2-acd54b0fd85d"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "10847001",
+              "display": "Bronchoscopy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "performedPeriod": {
+          "start": "2015-06-22"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "Practitioner/40"
+            },
+            "onBehalfOf": {
+              "reference": "Organization/42"
+            }
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "91724006",
+                "display": "Tracheobronchial structure (body structure)"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure",
+        "ifNoneExist": "identifier=d68b7e32-7812-4f5b-9cc2-acd54b0fd85d"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "44",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85e"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "175135009",
+              "display": "Introduction of cardiac pacemaker system via vein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "performedPeriod": {
+          "start": "2011-10-05"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "Practitioner/40"
+            },
+            "onBehalfOf": {
+              "reference": "Organization/42"
+            }
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "9454009",
+                "display": "Structure of subclavian vein"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure",
+        "ifNoneExist": "identifier=d68b7e32-7810-4f5b-9cc2-acd54b0fd85e"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "45",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-413c-b7bd-5e4a9f206f44"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/46",
+          "display": "Prednisolone 50mg"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-23",
+          "end": "2015-07-04"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 24,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-413c-b7bd-5e4a9f206f44"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "46",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "348428",
+              "display": "Prednisolone 50mg"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|348428"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "47",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-412c-b7bd-5e4a9f206f42"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/48",
+          "display": "Vantin 200MG (cefpodoxime 200mg)"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22",
+          "end": "2015-06-24"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 12,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-412c-b7bd-5e4a9f206f42"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "48",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "214078",
+              "display": "Vantin 200MG (cefpodoxime 200mg)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|214078"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "49",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-423c-b7bd-5e4a9f206f44"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/50",
+          "display": "Ciprofloxacin 250mg"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-24",
+          "end": "2015-07-24"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 8,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-423c-b7bd-5e4a9f206f44"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "50",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197511",
+              "display": "Ciprofloxacin 250mg"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|197511"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "51",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-411c-b7bd-5e4a9f207f42"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/52",
+          "display": "Torsemide 20mg"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-23",
+          "end": "2015-06-24"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 24,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-411c-b7bd-5e4a9f207f42"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "52",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "198371",
+              "display": "Torsemide 20mg"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|198371"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "53",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-411c-b7bd-5e4a9f217f44"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/54",
+          "display": "Mycophenolic Acid 360 mg"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-24",
+          "end": "2015-06-27"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 12,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-411c-b7bd-5e4a9f217f44"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "54",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "485023",
+              "display": "Mycophenolic Acid 360 mg"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|485023"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "55",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "cdbd33f0-6cde-11db-9fe1-0801200c9a66"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/56",
+          "display": "Ceftriaxone 100MG/ML"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22",
+          "end": "2015-06-24"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 12,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38276",
+                  "display": "INTRAVENOUS"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=cdbd33f0-6cde-11db-9fe1-0801200c9a66"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "56",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "309090",
+              "display": "Ceftriaxone 100MG/ML"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|309090"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "57",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "cdbd33f0-6cde-11db-9fe1-0805200c9b99"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/58",
+          "display": "Clindamycin 300mg"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-23",
+          "end": "2015-06-24"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 8,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=cdbd33f0-6cde-11db-9fe1-0805200c9b99"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "58",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "284215",
+              "display": "Clindamycin 300mg"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|284215"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "59",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-413c-b7bd-5e4a9f206e29"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/60",
+          "display": "Tylenol 500mg"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 24,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-413c-b7bd-5e4a9f206e29"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "60",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "209459",
+              "display": "Tylenol 500mg"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|209459"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "61",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "cdbd33f0-6cde-11db-9fe1-0804200c9a65"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/62",
+          "display": "Darbepoetin Alfa 0.5 MG/ML"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22",
+          "end": "2015-06-29"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 7,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38276",
+                  "display": "INTRAVENOUS"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=cdbd33f0-6cde-11db-9fe1-0804200c9a65"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "62",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "731184",
+              "display": "Darbepoetin Alfa 0.5 MG/ML"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|731184"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "63",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-411c-b7bd-5e4a9f216f43"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/64",
+          "display": "Levothyroxine Sodium 1 MG"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-23",
+          "end": "2015-06-24"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 24,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-411c-b7bd-5e4a9f216f43"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "64",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "892279",
+              "display": "Levothyroxine Sodium 1 MG"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|892279"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "65",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-411c-b7bd-5e4a9f206f44"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/66",
+          "display": "FenoFibric Acid 35 mg"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-24",
+          "end": "2015-07-04"
+        },
+        "dosage": [
+          {
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-411c-b7bd-5e4a9f206f44"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "66",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "860886",
+              "display": "FenoFibric Acid 35 mg"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|860886"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "67",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+            "valueCode": "UNKNOWN"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "value": "6c844c75-aa34-422c-b7bd-5e4a9f206f44"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/68",
+          "display": "Everolimus 0.5 mg"
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-24",
+          "end": "2015-07-20"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "period": 12,
+                "periodUnit": "h"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/nci",
+                  "code": "C38288",
+                  "display": "ORAL"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "1",
+                  "system": "http://unitsofmeasure.org/ucum.html"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement",
+        "ifNoneExist": "identifier=6c844c75-aa34-422c-b7bd-5e4a9f206f44"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "68",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "977434",
+              "display": "Everolimus 0.5 mg"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Medication",
+        "ifNoneExist": "code=http://www.nlm.nih.gov/research/umls/rxnorm|977434"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "69",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "e6f1ba43-c0ed-4b9b-9f12-f436d8ad8f92"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+              "code": "106",
+              "display": "Tetanus and diphtheria toxoids"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "occurrenceDateTime": "2012-01-04",
+        "primarySource": false,
+        "manufacturer": {
+          "reference": "Organization/70",
+          "display": "Immuno Inc."
+        },
+        "lotNumber": "2",
+        "route": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/nci",
+              "code": "C28161",
+              "display": "Intramuscular injection"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Immunization",
+        "ifNoneExist": "identifier=e6f1ba43-c0ed-4b9b-9f12-f436d8ad8f92"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "70",
+        "name": "Immuno Inc."
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "71",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "de10790f-1496-4719-8fe6-f1b88b6219f7"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+              "code": "166",
+              "display": "influenza, intradermal, quadrivalent, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "occurrenceDateTime": "2015-06-22",
+        "primarySource": false,
+        "manufacturer": {
+          "reference": "Organization/72",
+          "display": "Immuno Inc."
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/nci",
+              "code": "C28161",
+              "display": "Intramuscular injection"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Immunization",
+        "ifNoneExist": "identifier=de10790f-1496-4719-8fe6-f1b88b6219f7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "72",
+        "name": "Immuno Inc."
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "73",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+              "code": "88",
+              "display": "Influenza virus vaccine"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "occurrenceDateTime": "2014-05-10",
+        "primarySource": false,
+        "manufacturer": {
+          "reference": "Organization/74",
+          "display": "Immuno Inc."
+        },
+        "lotNumber": "1",
+        "route": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/nci",
+              "code": "C28161",
+              "display": "Intramuscular injection"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Immunization",
+        "ifNoneExist": "identifier=e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "74",
+        "name": "Immuno Inc."
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "75",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "1c2748b7-e440-41ba-bc01-dde97d84a036"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "BP Diastolic"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "issued": "2015-06-22T00:00:00-05:00",
+        "performer": [
+          {
+            "reference": "Practitioner/76"
+          }
+        ],
+        "valueQuantity": {
+          "value": 88,
+          "unit": "mm[Hg]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=1c2748b7-e440-41ba-bc01-dde97d84a036"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "76",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.840.1.113883.4.6",
+            "value": "555555555"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner",
+        "ifNoneExist": "identifier=urn:oid:2.16.840.1.113883.4.6|555555555"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "78",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "a0e39c70-9675-4b2a-9839-cdf74200d8d5"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59408-5",
+              "display": "O2 % BldC Oximetry"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22T10:12:00-05:00"
+        },
+        "valueQuantity": {
+          "value": 95,
+          "unit": "%"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=a0e39c70-9675-4b2a-9839-cdf74200d8d5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "79",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "f4e729e2-a97f-4a7e-8e23-c92f9b6b55cf"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Patient Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "issued": "2015-06-22T00:00:00-05:00",
+        "performer": [
+          {
+            "reference": "Practitioner/76"
+          }
+        ],
+        "valueQuantity": {
+          "value": 88,
+          "unit": "kg"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=f4e729e2-a97f-4a7e-8e23-c92f9b6b55cf"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "80",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "a0e39c70-9674-4b2a-9837-cdf74200d8d5"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Intravascular Systolic"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "issued": "2015-06-22T00:00:00-05:00",
+        "performer": [
+          {
+            "reference": "Practitioner/76"
+          }
+        ],
+        "valueQuantity": {
+          "value": 145,
+          "unit": "mm[Hg]"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=a0e39c70-9674-4b2a-9837-cdf74200d8d5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "81",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "ed9589fd-fda0-41f7-a3d0-dc537554f5c2"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22"
+        },
+        "issued": "2015-06-22T00:00:00-05:00",
+        "performer": [
+          {
+            "reference": "Practitioner/76"
+          }
+        ],
+        "valueQuantity": {
+          "value": 177,
+          "unit": "cm"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=ed9589fd-fda0-41f7-a3d0-dc537554f5c2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "82",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "a0e39c70-9675-4b2a-9838-cdf74200d8d5"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart Rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22T10:10:00-05:00"
+        },
+        "valueQuantity": {
+          "value": 80,
+          "unit": "/min"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=a0e39c70-9675-4b2a-9838-cdf74200d8d5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "83",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "a0e39c70-9675-4b2a-9841-cdf74200d8d5"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body Temperature"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22T10:15:00-05:00"
+        },
+        "valueQuantity": {
+          "value": 38,
+          "unit": "Cel"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=a0e39c70-9675-4b2a-9841-cdf74200d8d5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "84",
+        "identifier": [
+          {
+            "use": "official",
+            "value": "a0e39c70-9675-4b2a-9842-cdf74200d8d5"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1",
+              "display": "Respiratory Rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2",
+          "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+        },
+        "effectivePeriod": {
+          "start": "2015-06-22T10:15:00-05:00"
+        },
+        "valueQuantity": {
+          "value": 18,
+          "unit": "/min"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "N"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation",
+        "ifNoneExist": "identifier=a0e39c70-9675-4b2a-9842-cdf74200d8d5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "86",
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "2.16.840.1.113883.6.1",
+              "code": "34133-9",
+              "display": "Summarization of Episode Note"
+            }
+          ]
+        },
+        "date": "2020-05-12T10:34:30.137-04:00",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "data": "PENsaW5pY2FsRG9jPjxzcGFuPmRvY3VtZW50PC9zcGFuPjwvQ2xpbmljYWxEb2M+",
+              "hash": "Mu1CvTrCZqcAdZCePPsiAVmkBjw="
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DocumentReference"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Device",
+        "id": "87",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Data Transformer One</div>"
+        },
+        "identifier": [
+          {
+            "system": "http://www.amida.com",
+            "value": "Data Transformer One"
+          }
+        ],
+        "status": "active"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Device",
+        "ifNoneExist": "identifier=http://www.amida.com|Data+Transformer+One"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "85",
+        "target": [
+          {
+            "reference": "Composition/1",
+            "display": "Summarization of Episode Note"
+          },
+          {
+            "reference": "Patient/2",
+            "display": "Lindsey Turner Pitt, Lin Turner Pitt"
+          },
+          {
+            "reference": "Organization/3",
+            "display": "Community Health and Hospitals"
+          },
+          {
+            "reference": "Practitioner/4",
+            "display": "Dr Henry Seven"
+          },
+          {
+            "reference": "Practitioner/6",
+            "display": "Dr Henry Seven"
+          },
+          {
+            "reference": "Practitioner/8",
+            "display": "Dr Henry Seven"
+          },
+          {
+            "reference": "PractitionerRole/9",
+            "display": "Adult Medicine"
+          },
+          {
+            "reference": "Organization/10",
+            "display": "Community Health and Hospitals"
+          },
+          {
+            "reference": "Practitioner/11",
+            "display": "Mary McDonald"
+          },
+          {
+            "reference": "AllergyIntolerance/14",
+            "display": "Penicillin G"
+          },
+          {
+            "reference": "AllergyIntolerance/15",
+            "display": "Ampicillin"
+          },
+          {
+            "reference": "DiagnosticReport/16",
+            "display": "Urinalysis (procedure)"
+          },
+          {
+            "reference": "Observation/17",
+            "display": "Protein[Mass/Volume] in urine by test strip"
+          },
+          {
+            "reference": "Observation/18",
+            "display": "Color of Urine"
+          },
+          {
+            "reference": "Observation/19",
+            "display": "pH of Urine by Test strip"
+          },
+          {
+            "reference": "Observation/20",
+            "display": "Appearance of Urine"
+          },
+          {
+            "reference": "Observation/21",
+            "display": "Ketones [Mass/Volume] in urine by test strip"
+          },
+          {
+            "reference": "Observation/22",
+            "display": "Specific gravity of Urine by Test strip"
+          },
+          {
+            "reference": "Observation/23",
+            "display": "Glucose [Mass/volume] in urine by test strip"
+          },
+          {
+            "reference": "DiagnosticReport/24",
+            "display": "CBC"
+          },
+          {
+            "reference": "Observation/25",
+            "display": "HGB"
+          },
+          {
+            "reference": "Observation/26",
+            "display": "WBC"
+          },
+          {
+            "reference": "Observation/27",
+            "display": "PLT"
+          },
+          {
+            "reference": "Observation/28",
+            "display": "Everolimus Blood"
+          },
+          {
+            "reference": "Encounter/29",
+            "display": "Anemia in Chronic Kidney Disease"
+          },
+          {
+            "reference": "Practitioner/30"
+          },
+          {
+            "reference": "Location/32",
+            "display": "Community Health and Hospitals"
+          },
+          {
+            "reference": "Condition/33",
+            "display": "Chronic rejection of renal transplant"
+          },
+          {
+            "reference": "Condition/34",
+            "display": "INTERSTITIAL PNEUMONIA"
+          },
+          {
+            "reference": "Condition/35",
+            "display": "IRON DEFICIENCY ANEMIA"
+          },
+          {
+            "reference": "Condition/36",
+            "display": "Essential hypertension"
+          },
+          {
+            "reference": "Condition/37",
+            "display": "Severe Hypothyroidism"
+          },
+          {
+            "reference": "Condition/38",
+            "display": "Overweight"
+          },
+          {
+            "reference": "Procedure/39",
+            "display": "Chest X-Ray, PA and Lateral Views"
+          },
+          {
+            "reference": "Practitioner/40"
+          },
+          {
+            "reference": "PractitionerRole/41"
+          },
+          {
+            "reference": "Organization/42",
+            "display": "Community Health and Hospitals"
+          },
+          {
+            "reference": "Procedure/43",
+            "display": "Bronchoscopy"
+          },
+          {
+            "reference": "Procedure/44",
+            "display": "Introduction of cardiac pacemaker system via vein"
+          },
+          {
+            "reference": "MedicationStatement/45",
+            "display": "Prednisolone 50mg"
+          },
+          {
+            "reference": "Medication/46",
+            "display": "Prednisolone 50mg"
+          },
+          {
+            "reference": "MedicationStatement/47",
+            "display": "Vantin 200MG (cefpodoxime 200mg)"
+          },
+          {
+            "reference": "Medication/48",
+            "display": "Vantin 200MG (cefpodoxime 200mg)"
+          },
+          {
+            "reference": "MedicationStatement/49",
+            "display": "Ciprofloxacin 250mg"
+          },
+          {
+            "reference": "Medication/50",
+            "display": "Ciprofloxacin 250mg"
+          },
+          {
+            "reference": "MedicationStatement/51",
+            "display": "Torsemide 20mg"
+          },
+          {
+            "reference": "Medication/52",
+            "display": "Torsemide 20mg"
+          },
+          {
+            "reference": "MedicationStatement/53",
+            "display": "Mycophenolic Acid 360 mg"
+          },
+          {
+            "reference": "Medication/54",
+            "display": "Mycophenolic Acid 360 mg"
+          },
+          {
+            "reference": "MedicationStatement/55",
+            "display": "Ceftriaxone 100MG/ML"
+          },
+          {
+            "reference": "Medication/56",
+            "display": "Ceftriaxone 100MG/ML"
+          },
+          {
+            "reference": "MedicationStatement/57",
+            "display": "Clindamycin 300mg"
+          },
+          {
+            "reference": "Medication/58",
+            "display": "Clindamycin 300mg"
+          },
+          {
+            "reference": "MedicationStatement/59",
+            "display": "Tylenol 500mg"
+          },
+          {
+            "reference": "Medication/60",
+            "display": "Tylenol 500mg"
+          },
+          {
+            "reference": "MedicationStatement/61",
+            "display": "Darbepoetin Alfa 0.5 MG/ML"
+          },
+          {
+            "reference": "Medication/62",
+            "display": "Darbepoetin Alfa 0.5 MG/ML"
+          },
+          {
+            "reference": "MedicationStatement/63",
+            "display": "Levothyroxine Sodium 1 MG"
+          },
+          {
+            "reference": "Medication/64",
+            "display": "Levothyroxine Sodium 1 MG"
+          },
+          {
+            "reference": "MedicationStatement/65",
+            "display": "FenoFibric Acid 35 mg"
+          },
+          {
+            "reference": "Medication/66",
+            "display": "FenoFibric Acid 35 mg"
+          },
+          {
+            "reference": "MedicationStatement/67",
+            "display": "Everolimus 0.5 mg"
+          },
+          {
+            "reference": "Medication/68",
+            "display": "Everolimus 0.5 mg"
+          },
+          {
+            "reference": "Immunization/69",
+            "display": "Tetanus and diphtheria toxoids"
+          },
+          {
+            "reference": "Organization/70",
+            "display": "Immuno Inc."
+          },
+          {
+            "reference": "Immunization/71",
+            "display": "influenza, intradermal, quadrivalent, preservative free"
+          },
+          {
+            "reference": "Organization/72",
+            "display": "Immuno Inc."
+          },
+          {
+            "reference": "Immunization/73",
+            "display": "Influenza virus vaccine"
+          },
+          {
+            "reference": "Organization/74",
+            "display": "Immuno Inc."
+          },
+          {
+            "reference": "Observation/75",
+            "display": "BP Diastolic"
+          },
+          {
+            "reference": "Practitioner/76"
+          },
+          {
+            "reference": "Observation/78",
+            "display": "O2 % BldC Oximetry"
+          },
+          {
+            "reference": "Observation/79",
+            "display": "Patient Body Weight"
+          },
+          {
+            "reference": "Observation/80",
+            "display": "Intravascular Systolic"
+          },
+          {
+            "reference": "Observation/81",
+            "display": "Height"
+          },
+          {
+            "reference": "Observation/82",
+            "display": "Heart Rate"
+          },
+          {
+            "reference": "Observation/83",
+            "display": "Body Temperature"
+          },
+          {
+            "reference": "Observation/84",
+            "display": "Respiratory Rate"
+          },
+          {
+            "reference": "DocumentReference/86",
+            "display": "Summarization of Episode Note"
+          },
+          {
+            "reference": "Device/87"
+          }
+        ],
+        "recorded": "2020-05-12T10:34:30.133-04:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "id": "Device/87",
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "assembler",
+                  "display": "Assembler"
+                }
+              ]
+            },
+            "role": [
+              {
+                "coding": [
+                  {
+                    "id": "Device/87",
+                    "system": "http://hl7.org/fhir/provenance-participant-role",
+                    "code": "assembler",
+                    "display": "Assembler"
+                  }
+                ]
+              }
+            ],
+            "who": {
+              "reference": "Device/87"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DocumentReference/86",
+              "display": "Summarization of Episode Note"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Provenance"
+      }
+    }
+  ]
+}
