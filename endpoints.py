@@ -11,6 +11,14 @@ app = Flask(__name__)
 
 @app.route('/ingest_and_check', methods = ['POST'])
 def ingest_and_parse_components():
+    """
+    This end point allows user to POST an CCDA XML file and will return
+    a check on the unique id's per component.
+
+    :return: tuple containing boolean that denotes if there are duplicates in a particular
+             component, and the title of that component
+    :rtype: tuple(boolean, str)
+    """
     duplicated = []
 
     if request.method == 'POST':
