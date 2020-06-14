@@ -1,3 +1,6 @@
+import pandas as pd
+import utils
+
 
 def check_duplicates_ids(df, tag_column='tag', value_column='value', regex='id[0-9].@root'):
     """
@@ -24,3 +27,10 @@ def check_duplicates_ids(df, tag_column='tag', value_column='value', regex='id[0
         return (title, "No Duplicates")
 
 
+def unique_ids(components, flags):
+
+    for x in components['section']:
+        this_df = pd.DataFrame(utils.flatten_dict_detailed(utils.flatten_dict(x)).items(), columns=['tag', 'value'])
+        flags.append(check_duplicates_ids(this_df))
+
+    return 0

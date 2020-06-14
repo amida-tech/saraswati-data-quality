@@ -6,11 +6,8 @@ from utils import find_nested_indexes, get_components, flatten_dict, flatten_dic
 
 app = Flask(__name__)
 
-#TODO: remove check functionality from this endpoint
-#TODO: make this endpoint just upload + parse C-CDA
-
 @app.route('/ingest_and_check', methods = ['POST'])
-def ingest_and_parse_components():
+def ingest_and_run_checks():
     """
     This end point allows user to POST an CCDA XML file and will return
     a check on the unique id's per component.
@@ -19,7 +16,7 @@ def ingest_and_parse_components():
              component, and the title of that component
     :rtype: tuple(boolean, str)
     """
-    duplicated = []
+    flags = []
 
     if request.method == 'POST':
 
@@ -27,22 +24,12 @@ def ingest_and_parse_components():
         df = CCDAIngest_fromstring(file.read())
         components = pd.DataFrame(get_components(df, find_nested_indexes(df)))
 
-        for x in components['section']:
-            this_df = pd.DataFrame(flatten_dict_detailed(flatten_dict(x)).items(), columns=['tag', 'value'])
-            duplicated.append(checks.check_duplicates_ids(this_df))
+        checks.unique_ids(components, flags)
 
-    return json.dumps(dict(duplicated))
+        #continue to add more checks here
 
-#TODO: create seperate endpoint for each check
-@app.route('/check_duplicate_ids', methods = ['GET'])
-def check_duplicate_ids(components):
-    duplicated = []
+    return json.dumps(dict(flags))
 
-    for x in components['section']:
-        this_df = pd.DataFrame(flatten_dict_detailed(flatten_dict(x)).items(), columns=['tag', 'value'])
-        duplicated.append(checks.check_duplicates_ids(this_df))
-
-    return json.dumps(dict(duplicated))
 
 if __name__ == '__main__':
     app.run(debug=True)

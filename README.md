@@ -15,7 +15,11 @@ Test the Script:
 * run `python endpoints.py`
 * Open postman and hit the endpoint with
     * form-data:
+    
         *`Key`: `"file"` (NOTE: make sure the "file" drop down is selected)
+        
         *`Value`: `{upload C-CDA file}`
+        
         *`Content Type`: `"multipart/form-data"`
+        
     * expected return: JSON containing Titles of components and "No duplicates" or "Duplicates are present"
