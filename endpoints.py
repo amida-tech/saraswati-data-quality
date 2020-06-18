@@ -2,7 +2,8 @@ from flask import Flask, request
 import pandas as pd
 import json
 import checks
-from utils import find_nested_indexes, get_components, flatten_dict, flatten_dict_detailed, CCDAIngest_fromstring
+from utils import find_nested_indexes, get_components, CCDAIngest_fromstring, parse_xml, checkids
+
 
 app = Flask(__name__)
 
@@ -30,6 +31,26 @@ def ingest_and_run_checks():
 
     return json.dumps(dict(flags))
 
+@app.route('/ingest_and_check_byXpath', methods = ['POST'])
+def run_check_ids():
+    output, metrics, log = {}, {}, {}
+
+    if request.method == 'POST':
+
+        file = request.files['file']
+        root = parse_xml(file)
+        id_result = checkids(root)
+
+        if True in [boolean for (title, boolean) in id_result]:
+            log['duplicate_ids'] = id_result
+
+
+    metrics['Duplicate Ids count'] = sum([boolean for (title, boolean) in id_result])
+
+    output['metrics'] = metrics
+    output['log'] = log
+
+    return json.dumps(output)
 
 if __name__ == '__main__':
     app.run(debug=True)
