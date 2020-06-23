@@ -1,52 +1,36 @@
 from flask import Flask, request
-import pandas as pd
 import json
-import checks
-from utils import find_nested_indexes, get_components, CCDAIngest_fromstring, parse_xml, checkids
+import time
+from utils import parse_xml, checkids, tup_to_dict
 
 
 app = Flask(__name__)
 
-@app.route('/ingest_and_check', methods = ['POST'])
-def ingest_and_run_checks():
-    """
-    This end point allows user to POST an CCDA XML file and will return
-    a check on the unique id's per component.
-
-    :return: tuple containing boolean that denotes if there are duplicates in a particular
-             component, and the title of that component
-    :rtype: tuple(boolean, str)
-    """
-    flags = []
-
-    if request.method == 'POST':
-
-        file = request.files['file']
-        df = CCDAIngest_fromstring(file.read())
-        components = pd.DataFrame(get_components(df, find_nested_indexes(df)))
-
-        checks.unique_ids(components, flags)
-
-        #continue to add more checks here
-
-    return json.dumps(dict(flags))
-
 @app.route('/ingest_and_check_byXpath', methods = ['POST'])
 def run_check_ids():
-    output, metrics, log = {}, {}, {}
+    output, metrics, log, temp = {}, {}, {}, {}
 
     if request.method == 'POST':
 
         file = request.files['file']
         root = parse_xml(file)
+        #check 1
         id_result = checkids(root)
+        #check 2
+        #check 3
+        #...
+        #check n
 
         if True in [boolean for (title, boolean) in id_result]:
-            log['duplicate_ids'] = id_result
+            log['Components with duplicate ids'] = tup_to_dict(id_result, temp)
+            log['time'] = time.strftime('%A %B, %d %Y %H:%M:%S')
 
+        metrics['Components with duplicate ids'] = sum([boolean for (title, boolean) in id_result])
 
-    metrics['Duplicate Ids count'] = sum([boolean for (title, boolean) in id_result])
+    metrics['total errors'] = sum(metrics.values())
+    metrics['time'] = time.strftime('%A %B, %d %Y %H:%M:%S')
 
+    output['XML_source'] = file.filename
     output['metrics'] = metrics
     output['log'] = log
 
